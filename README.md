@@ -49,7 +49,6 @@ Install the following software:
 - **Flutter SDK 3.0+** → [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 - **Google Chrome** → [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
----
 
 # Backend Setup
 
@@ -70,14 +69,12 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 ```
----
 
 ## Step 3: Install dependencies
 ```bash
 pip install fastapi uvicorn pydantic bcrypt pyjwt geopy numpy python-multipart email-validator
 ```
 
----
 
 ## Step 4: Run the backend server
 ```bash
@@ -88,7 +85,6 @@ python main.py
 
 > Keep this terminal open and open a new terminal for the frontend.
 
----
 
 # Frontend Setup
 
@@ -126,7 +122,6 @@ flutter build apk --release
 
 **App should now be running!**
 
----
 
 # Test the Application
 
@@ -136,7 +131,6 @@ flutter build apk --release
 4. Click **"Create Account"**
 5. Explore the app — *Dashboard, Map, Report, Health, Learn*
 
----
 
 # Verify Backend is Working
 
