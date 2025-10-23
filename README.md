@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ClimaTrack 
 **AI-Powered Climate Risk and Health Insight System**  
 **Author:** Justice Chukwuonye  
@@ -144,3 +145,7 @@ Open your browser and go to:
 - **API Docs:** [http://localhost:8000/api/docs](http://localhost:8000/api/docs)  
 - **Health Check:** [http://localhost:8000/health](http://localhost:8000/health)
 
+=======
+# ClimaApp
+A full combination of both ClimaTrack Stacks
+>>>>>>> eef6a27c8df97a2eb9f2b39480bd172d6560b0de
