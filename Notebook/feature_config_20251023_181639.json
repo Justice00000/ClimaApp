@@ -1,0 +1,560 @@
+{
+  "selected_features": [
+    "exp_wash_risk",
+    "open_defecation_rate_pct_squared",
+    "sanitation_x_waste_mgmt",
+    "sanitation_coverage_pct_percentile",
+    "education_to_poverty_ratio",
+    "temp_x_humid_x_poorwater",
+    "water_quality_index",
+    "ndwi",
+    "exp_fecal_contamination",
+    "flood_risk_index",
+    "poverty_x_poor_water",
+    "piped_water_x_quality",
+    "rainfall_x_flood_risk",
+    "poor_sanitation_x_crowding",
+    "sanitation_to_opendefec_ratio",
+    "open_defecation_rate_pct_percentile",
+    "ndwi_x_poor_water_quality",
+    "rainfall_x_open_defecation",
+    "temp_x_humidity",
+    "infrastructure_quality",
+    "water_quality_index_percentile",
+    "environmental_exposure",
+    "avg_environmental_risk",
+    "waste_management_score",
+    "environmental_risk_component",
+    "sanitation_coverage_pct",
+    "soil_moisture_x_rainfall",
+    "water_quality_index_zscore",
+    "poverty_rate_pct_percentile",
+    "temperature_c_percentile",
+    "soil_moisture",
+    "temperature_0.5",
+    "temp_deviation_from_median",
+    "flood_x_population",
+    "rain_x_opendefec_x_pop",
+    "days_since_rain",
+    "poverty_rate_pct",
+    "temperature_c_squared",
+    "open_defecation_rate_pct",
+    "log_poverty_rate_pct",
+    "piped_water_access_pct",
+    "humidity_pct",
+    "water_quality_quartile",
+    "income_x_sanitation",
+    "humidity_pct_squared",
+    "rainfall_mm_percentile",
+    "temperature_c",
+    "humidity_pct_zscore",
+    "humidity_1.5",
+    "temperature_c_zscore",
+    "poverty_x_low_healthcare"
+  ],
+  "feature_votes": [
+    {
+      "feature": "exp_wash_risk",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "open_defecation_rate_pct_squared",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "sanitation_x_waste_mgmt",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "sanitation_coverage_pct_percentile",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "education_to_poverty_ratio",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "temp_x_humid_x_poorwater",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "water_quality_index",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "ndwi",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "exp_fecal_contamination",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "flood_risk_index",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "poverty_x_poor_water",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "piped_water_x_quality",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "rainfall_x_flood_risk",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "poor_sanitation_x_crowding",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "sanitation_to_opendefec_ratio",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "open_defecation_rate_pct_percentile",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "ndwi_x_poor_water_quality",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "rainfall_x_open_defecation",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "temp_x_humidity",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "infrastructure_quality",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "water_quality_index_percentile",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "environmental_exposure",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "avg_environmental_risk",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "waste_management_score",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "environmental_risk_component",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "sanitation_coverage_pct",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "soil_moisture_x_rainfall",
+      "votes": 6,
+      "methods": "VarThresh, F-test, MI, RFE, RF, ET"
+    },
+    {
+      "feature": "water_quality_index_zscore",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RF, ET"
+    },
+    {
+      "feature": "poverty_rate_pct_percentile",
+      "votes": 5,
+      "methods": "VarThresh, F-test, RFE, RF, ET"
+    },
+    {
+      "feature": "temperature_c_percentile",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RFE, ET"
+    },
+    {
+      "feature": "soil_moisture",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RF, ET"
+    },
+    {
+      "feature": "temperature_0.5",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RFE, ET"
+    },
+    {
+      "feature": "temp_deviation_from_median",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RFE, ET"
+    },
+    {
+      "feature": "flood_x_population",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RFE, RF"
+    },
+    {
+      "feature": "rain_x_opendefec_x_pop",
+      "votes": 5,
+      "methods": "VarThresh, F-test, MI, RFE, RF"
+    },
+    {
+      "feature": "days_since_rain",
+      "votes": 5,
+      "methods": "VarThresh, F-test, RFE, RF, ET"
+    },
+    {
+      "feature": "poverty_rate_pct",
+      "votes": 5,
+      "methods": "VarThresh, F-test, RFE, RF, ET"
+    },
+    {
+      "feature": "temperature_c_squared",
+      "votes": 4,
+      "methods": "VarThresh, F-test, MI, ET"
+    },
+    {
+      "feature": "open_defecation_rate_pct",
+      "votes": 4,
+      "methods": "VarThresh, F-test, MI, ET"
+    },
+    {
+      "feature": "log_poverty_rate_pct",
+      "votes": 4,
+      "methods": "VarThresh, F-test, MI, ET"
+    },
+    {
+      "feature": "piped_water_access_pct",
+      "votes": 4,
+      "methods": "VarThresh, RFE, RF, ET"
+    },
+    {
+      "feature": "humidity_pct",
+      "votes": 4,
+      "methods": "VarThresh, F-test, MI, RFE"
+    },
+    {
+      "feature": "water_quality_quartile",
+      "votes": 4,
+      "methods": "VarThresh, F-test, MI, ET"
+    },
+    {
+      "feature": "income_x_sanitation",
+      "votes": 3,
+      "methods": "VarThresh, F-test, MI"
+    },
+    {
+      "feature": "humidity_pct_squared",
+      "votes": 3,
+      "methods": "VarThresh, MI, RFE"
+    },
+    {
+      "feature": "rainfall_mm_percentile",
+      "votes": 3,
+      "methods": "VarThresh, MI, RFE"
+    },
+    {
+      "feature": "temperature_c",
+      "votes": 3,
+      "methods": "VarThresh, F-test, MI"
+    },
+    {
+      "feature": "humidity_pct_zscore",
+      "votes": 3,
+      "methods": "VarThresh, MI, RF"
+    },
+    {
+      "feature": "humidity_1.5",
+      "votes": 3,
+      "methods": "VarThresh, MI, RF"
+    },
+    {
+      "feature": "temperature_c_zscore",
+      "votes": 3,
+      "methods": "VarThresh, F-test, MI"
+    },
+    {
+      "feature": "poverty_x_low_healthcare",
+      "votes": 3,
+      "methods": "VarThresh, RFE, RF"
+    },
+    {
+      "feature": "rainfall_quartile",
+      "votes": 2,
+      "methods": "VarThresh, MI"
+    },
+    {
+      "feature": "education_x_hygiene",
+      "votes": 2,
+      "methods": "VarThresh, RF"
+    },
+    {
+      "feature": "water_stress_index",
+      "votes": 2,
+      "methods": "VarThresh, RF"
+    },
+    {
+      "feature": "extreme_rainfall_flag",
+      "votes": 2,
+      "methods": "VarThresh, MI"
+    },
+    {
+      "feature": "rainfall_mm_zscore",
+      "votes": 2,
+      "methods": "VarThresh, F-test"
+    },
+    {
+      "feature": "rainfall_deviation_from_median",
+      "votes": 2,
+      "methods": "VarThresh, F-test"
+    },
+    {
+      "feature": "rainfall_mm",
+      "votes": 2,
+      "methods": "VarThresh, F-test"
+    },
+    {
+      "feature": "awei",
+      "votes": 2,
+      "methods": "VarThresh, F-test"
+    },
+    {
+      "feature": "sqrt_rainfall_mm",
+      "votes": 2,
+      "methods": "VarThresh, F-test"
+    },
+    {
+      "feature": "rainfall_mm_squared",
+      "votes": 2,
+      "methods": "VarThresh, MI"
+    },
+    {
+      "feature": "rainfall_mm_cubed",
+      "votes": 2,
+      "methods": "VarThresh, MI"
+    },
+    {
+      "feature": "water_distance_x_population",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "log_water_source_distance_m",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "rainfall_to_evap_ratio",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "education_years_percentile",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_quartile",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "water_source_distance_m",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "poor_water_quality_indicator",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "latrine_coverage_pct",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "extreme_population_flag",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_density",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "location_type_encoded",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_density_squared",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "high_rainfall_indicator",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "wind_x_evap",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "solar_radiation",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "healthcare_facilities",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "household_size",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "wind_speed_kmh",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "education_years",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "ndvi",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_density_cubed",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "sqrt_population_density",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "sqrt_healthcare_facilities",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "pathogen_survival_prob",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_density_percentile",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "log_population_density",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "evapotranspiration",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "sqrt_water_source_distance_m",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "water_area_change_pct",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "latrine_x_hygiene_ed",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "season_encoded",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "population_density_zscore",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "income_level",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "seasonal_amplification",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "high_population_indicator",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "household_size_squared",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "hygiene_education_score",
+      "votes": 1,
+      "methods": "VarThresh"
+    },
+    {
+      "feature": "critical_sanitation_indicator",
+      "votes": 1,
+      "methods": "VarThresh"
+    }
+  ],
+  "n_features": 51,
+  "selection_method": "ensemble_voting",
+  "min_votes": 3
+}
