@@ -4,7 +4,7 @@
 **GitHub Repository:** [ClimaTrack](https://github.com/Justice00000/Clima-Track/)  
 **Demo Video :** [Video Demo](https://youtube.com/shorts/wiGlZLavFPs?feature=share)
 
-**Download the App using this link** [ClimaTrack](https://drive.google.com/file/d/1N6wHcVsQT_bvVg_x7JpSTeUERbb72WK3/view?usp=drivesdk)
+**Download the Mobile App using this link** [ClimaTrack](https://drive.google.com/file/d/1N6wHcVsQT_bvVg_x7JpSTeUERbb72WK3/view?usp=drivesdk)
 
 **Prototype:** 
 
@@ -144,3 +144,7 @@ Open your browser and go to:
 
 - **API Docs:** [http://localhost:8000/api/docs](http://localhost:8000/api/docs)  
 - **Health Check:** [http://localhost:8000/health](http://localhost:8000/health)
+
+# Current Bankend API Endpoint
+
+- **API ENDPOINT** [ClimaTrack API](https://climatrack-2ve7.onrender.com)
