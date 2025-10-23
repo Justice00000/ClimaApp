@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 # ClimaTrack 
 **AI-Powered Climate Risk and Health Insight System**  
 **Author:** Justice Chukwuonye  
 **GitHub Repository:** [ClimaTrack](https://github.com/Justice00000/Clima-Track/)  
-**Demo Video (6 min):** [Video Demo](https://youtube.com/shorts/wiGlZLavFPs?feature=share)
+**Demo Video :** [Video Demo](https://youtube.com/shorts/wiGlZLavFPs?feature=share)
+
 **Download the App using this link** [ClimaTrack](https://drive.google.com/file/d/1N6wHcVsQT_bvVg_x7JpSTeUERbb72WK3/view?usp=drivesdk)
 
 **Prototype:** 
@@ -144,8 +144,3 @@ Open your browser and go to:
 
 - **API Docs:** [http://localhost:8000/api/docs](http://localhost:8000/api/docs)  
 - **Health Check:** [http://localhost:8000/health](http://localhost:8000/health)
-
-=======
-# ClimaApp
-A full combination of both ClimaTrack Stacks
->>>>>>> eef6a27c8df97a2eb9f2b39480bd172d6560b0de
