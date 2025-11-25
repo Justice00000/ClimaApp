@@ -1,10 +1,3 @@
-# main.py - ClimaTrack Backend API
-"""
-ClimaTrack Backend Server
-Predictive Waterborne Disease Risk Monitoring System
-Author: Chukwuonye Justice Izuchukwu
-"""
-
 from fastapi import FastAPI, HTTPException, Depends, status, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -22,7 +15,7 @@ import numpy as np
 # CONFIGURATION
 # ============================================================================
 
-SECRET_KEY = "k46cIo6jN4zRe6RkmWUGKYy5HQ7EtkVXxg2_5VaDvNM"  # Change this!
+SECRET_KEY = "k46cIo6jN4zRe6RkmWUGKYy5HQ7EtkVXxg2_5VaDvNM"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
@@ -37,7 +30,7 @@ app = FastAPI(
 # CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately in production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -76,7 +69,7 @@ class UserRegistration(BaseModel):
     email: EmailStr
     password: str = Field(..., min_length=6)
     phone: Optional[str] = None
-    location: Optional[Dict[str, float]] = None  # {"latitude": 6.5244, "longitude": 3.3792}
+    location: Optional[Dict[str, float]] = None
 
 class UserLogin(BaseModel):
     email: EmailStr
@@ -116,7 +109,7 @@ class CommunityReport(BaseModel):
     location: LocationData
     description: str = Field(..., min_length=10, max_length=500)
     severity: Optional[int] = Field(None, ge=1, le=5)
-    images: Optional[List[str]] = None  # URLs to uploaded images
+    images: Optional[List[str]] = None
     reporter_contact: Optional[str] = None
 
 class HealthSymptom(BaseModel):
@@ -133,7 +126,7 @@ class AlertNotification(BaseModel):
     title: str
     message: str
     location: LocationData
-    affected_radius: float  # in kilometers
+    affected_radius: float
     issued_at: datetime
     expires_at: Optional[datetime] = None
     action_items: List[str]
@@ -151,51 +144,51 @@ class ZoneData(BaseModel):
 # IN-MEMORY DATABASE (Replace with PostgreSQL/MongoDB in production)
 # ============================================================================
 
-USERS_DB = {}  # email -> user_data
-PREDICTIONS_DB = {}  # location_key -> prediction_data
-REPORTS_DB = []  # List of community reports
-ALERTS_DB = []  # List of active alerts
-HEALTH_LOGS_DB = []  # List of health symptoms
+USERS_DB = {}
+PREDICTIONS_DB = {}
+REPORTS_DB = []
+ALERTS_DB = []
+HEALTH_LOGS_DB = [] 
 
 # Sample zones for Lagos area
-ZONES_DB = {
-    "ikeja_north": {
-        "zone_id": "ikeja_north",
-        "name": "Ikeja North",
-        "location": {"latitude": 6.6149, "longitude": 3.3406},
-        "risk_level": RiskLevel.LOW,
-        "population": 85000,
-        "last_updated": datetime.now(),
-        "historical_outbreaks": 2
-    },
-    "oshodi": {
-        "zone_id": "oshodi",
-        "name": "Oshodi",
-        "location": {"latitude": 6.5586, "longitude": 3.3469},
-        "risk_level": RiskLevel.LOW,
-        "population": 120000,
-        "last_updated": datetime.now(),
-        "historical_outbreaks": 3
-    },
-    "victoria_island": {
-        "zone_id": "victoria_island",
-        "name": "Victoria Island",
-        "location": {"latitude": 6.4281, "longitude": 3.4219},
-        "risk_level": RiskLevel.MODERATE,
-        "population": 95000,
-        "last_updated": datetime.now(),
-        "historical_outbreaks": 1
-    },
-    "surulere": {
-        "zone_id": "surulere",
-        "name": "Surulere",
-        "location": {"latitude": 6.4969, "longitude": 3.3614},
-        "risk_level": RiskLevel.HIGH,
-        "population": 150000,
-        "last_updated": datetime.now(),
-        "historical_outbreaks": 5
-    }
-}
+# ZONES_DB = {
+#     "ikeja_north": {
+#         "zone_id": "ikeja_north",
+#         "name": "Ikeja North",
+#         "location": {"latitude": 6.6149, "longitude": 3.3406},
+#         "risk_level": RiskLevel.LOW,
+#         "population": 85000,
+#         "last_updated": datetime.now(),
+#         "historical_outbreaks": 2
+#     },
+#     "oshodi": {
+#         "zone_id": "oshodi",
+#         "name": "Oshodi",
+#         "location": {"latitude": 6.5586, "longitude": 3.3469},
+#         "risk_level": RiskLevel.LOW,
+#         "population": 120000,
+#         "last_updated": datetime.now(),
+#         "historical_outbreaks": 3
+#     },
+#     "victoria_island": {
+#         "zone_id": "victoria_island",
+#         "name": "Victoria Island",
+#         "location": {"latitude": 6.4281, "longitude": 3.4219},
+#         "risk_level": RiskLevel.MODERATE,
+#         "population": 95000,
+#         "last_updated": datetime.now(),
+#         "historical_outbreaks": 1
+#     },
+#     "surulere": {
+#         "zone_id": "surulere",
+#         "name": "Surulere",
+#         "location": {"latitude": 6.4969, "longitude": 3.3614},
+#         "risk_level": RiskLevel.HIGH,
+#         "population": 150000,
+#         "last_updated": datetime.now(),
+#         "historical_outbreaks": 5
+#     }
+# }
 
 # ============================================================================
 # UTILITY FUNCTIONS
@@ -419,7 +412,7 @@ async def generate_risk_prediction(
 ):
     """Generate waterborne disease risk prediction for location"""
     
-    # Calculate risk using ML model (simplified version)
+    # Calculate risk using ML model
     risk_level, risk_score, factors = calculate_risk_score(env_data)
     
     # Generate recommendations
@@ -430,7 +423,7 @@ async def generate_risk_prediction(
         location=env_data.location,
         risk_level=risk_level,
         risk_score=risk_score,
-        confidence=0.85,  # In production, from ML model
+        confidence=0.85,
         contributing_factors=factors,
         prediction_date=datetime.now(),
         valid_until=datetime.now() + timedelta(hours=24),
